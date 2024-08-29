@@ -1,0 +1,171 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #fff4fe; 
+}
+
+
+header {
+    background: linear-gradient(45deg, #58118b, #9f0866);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    animation: nav-load 300ms ease-in 400ms;
+}
+
+header .logo {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 5pc;
+    margin-top: 3pc;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #ffd700; 
+}
+
+
+.hero {
+    background: linear-gradient(45deg, #6306a5, #c50b7e); 
+    color: #fff;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background: linear-gradient(45deg, #6a0dad, #ff6ec7); 
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.cta-button:hover {
+    background: linear-gradient(45deg, #5c0a9d, #e65ab1); 
+    transform: scale(1.05);
+}
+
+
+.features, .about, .contact {
+    padding: 60px 20px;
+    text-align: center;
+    font-size: 2pc;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature-card {
+    background: linear-gradient(45deg, #6a0dad, #ff6ec7); 
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 16px;
+}
+
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    border: 1px solid #fbfafa;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.contact input:focus, .contact textarea:focus {
+    border-color: #6a0dad; 
+    outline: none;
+}
+
+.contact button {
+    background: linear-gradient(45deg, #6a0dad, #ff6ec7); 
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.contact button:hover {
+    background: linear-gradient(45deg, #5c0a9d, #e65ab1); 
+    transform: scale(1.05);
+}
+
+footer {
+    background: linear-gradient(45deg, #6a0dad, #ff6ec7); 
+    color: #fff;
+    padding: 20px 0;
+    text-align:left;
+    font-size: 14px;
+}
+
+@keyframes nav-load{
+    0%{
+      transform: translateY(-100%);
+    }
+    100%{
+       transform: translateY(0);
+    }
+}
